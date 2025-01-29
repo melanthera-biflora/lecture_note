@@ -17,7 +17,8 @@ GIS requires 4 components:
 # GIS Brief History:
 * Since 1960s computer have been used to store and process geographically referenced data.
 * Problem with GIS in early age: difficult, expensive, and proprietary.
-* Some GIS software producers and their products:
+
+Some GIS software producers and their products:
 | Producers | Products |
 | -------- | ------- |
 | ESRI Inc | ArcGIS, ArcView, ArcEditor, ArcInfo |
