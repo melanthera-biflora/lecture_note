@@ -57,3 +57,21 @@ A collection of examples.
 * Factors determining machine learning performance: make the training error small and make the gap between train and test error small.
 * **Underfitting**: when the model is not able to obtain a sufficiently low error value on the training set.
 * **Overfitting**: when the gap between the training error and testing error is too large.
+# No Free Lunch (NFL) theorems for machine learning
+* No ML algorithm is universally any better than any other.
+# Regularization:
+# Hyperparameter & Validation Sets: 
+* setting to control the behavior of the learning algorithm.
+* are not adapted by the learning algrothim itself.
+* should NOT be learned from the training set.
+* A validation set that the training algorithm does not observe can be used to tune model hyperparameters => part of training dataset
+# Some common terminology:
+* Input
+* Output
+* Parameter
+* Capacity
+* Hypothesis space
+* Features
+* Training set
+* Validation set
+* Test set
