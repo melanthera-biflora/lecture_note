@@ -58,5 +58,27 @@ Including two components: **spatial data** and **attribute data**.
 * 2 options for data acquisition: (1) using existing data and (2) create new data.
 * New digital spatial data can be created from satellite images, GPS data, field surveys, street addresses, text file with x-, y- coordinates.
 * Paper map remain the dominant data sources.
-  
+### Attribute data management:
+* We must enter, verify, and manage attribute data to complete a GIS database.
+* Attribute data entry and verification also involves digitizing and editing.
+### Data Display:
+* Mapmaking is a routine GIS operation for data visualization, query, analysis and presentation.
+* Elements in maps: title, subtitle, body, legend, north arrow, scale, acknowledgment, neatline, and border.
+### Data exploration:
+* is data-centered query and analysis, allowing user to explore the general trends in the data, to take a close look at data subsets, and to focus on possible relationship between dataset.
+### Data analysis:
+* Vector:
+                            * Map overlay: combines spatial data and attribute data from different maps to create the output.
+                            * Map manipulation: perform dissolving, clipping, merging, splitting, erasing, and other task.
+                            * Buffering: measures straight-line distances from map features an creates buffer zones.
+                            * Distance measurement: measures distances between map features.
+* Raster:
+                            * Local: involves individual cells.
+                            * Neighborhood operation: a specified neighborhood.
+                            * Zonal operation: A group of connected cell.
+                            * Global operation: an entire grid.
+=> Raster operation is computationally more efficient than the vector operation.
+* Spatial interpolation: refers to the process of using points with known values to construct a statistical surface => converting point ata into raster data.
+### GIS Modeling:
+* GIS modeling refers to the use of a GIS and its functionalities in building a moel with geographically referenced ata.
 
