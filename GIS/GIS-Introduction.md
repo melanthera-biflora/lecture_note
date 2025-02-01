@@ -34,5 +34,29 @@ Including two components: **spatial data** and **attribute data**.
 * Describes the locations of spatial features, which may be discrete or continuous.
 * **Discrete features**: individually distinguisable features. Ex: points, lines, areas, v.v..
 * **Continuous features**: features exist spatially between observations. Ex: elevation, precipitation, v.v..
-
+* **Topology**, as used in GIS, expresses explicitly the spatial relationships between features.
+* ESRI uses coverage for topological data and shapefile for nontopological data.
+* **Higher-level data**:
+        * Triangulated irregular network (TIN): approximates the terrain wwith a set of non-overlapping trianges, is mae of points and edges (lines).
+        * Regions data model, which allows regions to overlap and to have spatially disjoint components, is built on lines and polygons.
+        * Dynamic segmentation, which combines plane coordinates with linear measures, is built on top of a network.
+=> Higher-level data are useful in GIS because they can handle more complex spatial relationships.
+* **Object-oriented data model** uses objects to organize spatial data.
+### Attribute data:
+* Describes the characteristics of spatial features.
+* Raster data: each cell has a value that corresponds to the attribute of the spatial feature at that location.
+* Vector data: the amount of attribute data to be associated with a spatial feature can vary significantly.
+### Join Spatial and Attribute Data:
+* **Georelational data model**: GIS packages store attribute data separately from spatial data in a split data system.
+        * Spatial data: stored in graphic files
+        * Attribute data: stored in tables.
+=> Both data are linked through the featured ID.
+* Object-oriented  data model stores spatial data as an attribute along with other attribute data in a single table.
+* **Relational database**: a collection of tables (relations), with connection made through a key - a common field whose values can uniquely identify a record in a table.
+# GIS Operation:
+### Spatial data input:
+* 2 options for data acquisition: (1) using existing data and (2) create new data.
+* New digital spatial data can be created from satellite images, GPS data, field surveys, street addresses, text file with x-, y- coordinates.
+* Paper map remain the dominant data sources.
+  
 
