@@ -27,3 +27,15 @@
 * Latitude < 0 => south of the equator.
 * Longitude > 0 => eastern hemisphere.
 * Longitude < 0 => western hemisphere.
+* Longitude and latitude values may be measured in the degrees-minutes-seconds (DMS) or decimal degree (DD).
+# Map Projection:
+* **Map projection**: a systematic construction of lines on a plane surface representing the geographic coordinate system.
+* Transformation from the Earth's surface to a flat surface always involves distortion and no map projection is perfect.
+* Every map projection preserves certain spatial properties while sacrificing other properties.
+* 4 class of map projections:
+  * Conformal projection: preserves local angles and shapes.
+  * Equivalent projection: represents areas in correct relative size.
+  * Equidistant projection: maintains consistency of scale along certain lines.
+  * Azimuthal projection: retains certain accurate direction.
+* Conformal projection and equivalent projection are mutually exclusive, applying to the entire map projection (global properties).
+* Equidistant and Azimuthal: local properties and may be true only from or to the center of the map projection.
