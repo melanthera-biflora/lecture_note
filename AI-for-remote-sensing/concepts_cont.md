@@ -15,3 +15,4 @@
         * The test error can be estimated by taking the average test error across k trials.
 ### Estimator, Bias and Varience in Machine Learning (?????)
 * Function estimation/ approximation
+* Bias in ML: The sample mean is an unbiased estimator of Gaussian mean parameter & The sample variance is a biased estimator of the variance of a Gaussian distribution.
