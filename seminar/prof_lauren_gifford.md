@@ -34,3 +34,4 @@ Lauren Gifford
 * Cross-check with other sources.
 * Pay attention to visual techniques.
 
+* Great personal story and advice on career: Just do it and thrive to do something you want to try.
