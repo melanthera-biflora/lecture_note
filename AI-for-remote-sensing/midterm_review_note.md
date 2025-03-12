@@ -49,7 +49,7 @@ $$
 = p(x_1) p(x_2 \mid x_1) p(x_3 \mid x_1, x_2) \dots p(x_n \mid x_1, \dots, x_{n-1})
 $$
 
-  * We can solve the supervised learning problem of \( p(y \mid \mathbf{x}) \) by using unsupervised learning technologies to learn the joint distribution \( p(\mathbf{x}, y) \) and inferring:
+  * We can solve the supervised learning problem of $$\( p(y \mid \mathbf{x}) \)$$ by using unsupervised learning technologies to learn the joint distribution $$\( p(\mathbf{x}, y) \)$$ and inferring:
 
 $$
 p(y \mid \mathbf{x}) = \frac{p(\mathbf{x}, y)}{\sum_{y'} p(\mathbf{x}, y')}
