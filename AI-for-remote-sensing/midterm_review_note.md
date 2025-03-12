@@ -58,4 +58,7 @@ p(y \mid \mathbf{x}) = \frac{p(\mathbf{x}, y)}{\sum_{y'} p(\mathbf{x}, y')}
 $$
   * **Semisupervised learning**: Some examples includes supervision target/ label, but others do not.
   * **Reinforcement learning**: Not just experiencing the fixed dataset. Interact with an environment: feedback loop between the learning system and its experience
-  * **Dataset**: a collection of examples, which are in turn collections of features. Dataset can be described as vector or matrix $$x = \begin{bmatrix} Z_h & Z_dr & K_dp \end{bmatrix}; y = R$$
+  * **Dataset**: a collection of examples, which are in turn collections of features. Dataset can be described as vector or matrix
+$$
+x = \begin{bmatrix} Z_h & Z_dr & K_dp \end{bmatrix}; y = R
+$$
