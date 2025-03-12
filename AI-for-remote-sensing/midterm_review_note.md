@@ -60,5 +60,5 @@ $$
   * **Reinforcement learning**: Not just experiencing the fixed dataset. Interact with an environment: feedback loop between the learning system and its experience
   * **Dataset**: a collection of examples, which are in turn collections of features. Dataset can be described as vector or matrix
 $$
-x = \begin{bmatrix} Z_h & Z_dr & K_dp \end{bmatrix}; y = R
+x = \begin{bmatrix} Z_h & Z_dr & K_dp \end{bmatrix}, y = R
 $$
