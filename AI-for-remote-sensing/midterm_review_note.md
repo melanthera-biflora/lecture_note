@@ -59,3 +59,12 @@ $$
   * **Semisupervised learning**: Some examples includes supervision target/ label, but others do not.
   * **Reinforcement learning**: Not just experiencing the fixed dataset. Interact with an environment: feedback loop between the learning system and its experience
   * **Dataset**: a collection of examples, which are in turn collections of features. Dataset can be described as vector or matrix $x = \left[ Z_h, Z_{dr}, K_{dp} \right], \ y = R$
+## Example: Linear Regression 
+* Objective: to build a system that can take a vector $ x \in R^N $ as input and predict the value of a scalar $ y \in R $ as its output.
+* Let $\hat{y}$ be the value that our model predicts $y$ should take on. We define the output to be:
+
+$$
+\hat{y} = \mathbf{w}^\top \mathbf{x}
+$$
+
+* $\mathbf{w} \in \mathbb{R}^n$: a vector of **parameters/weights**; $w_i$ is the coefficient that we multiply by feature $x_i$ before summing up the contributions from all the features.
