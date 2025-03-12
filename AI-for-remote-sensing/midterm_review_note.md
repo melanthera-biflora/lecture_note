@@ -41,7 +41,7 @@
     * Ex: density estimation, clustering => K-mean clustering.
 * The line between them is often blurred.
   * The decomposition of joint distribution means that we can solve the unsupervised problem of modeling p(x) by splitting it into n supervised learning problems.
-    * \[
+\[
 p(\mathbf{x}) = \prod_{i=1}^{n} p(x_i \mid x_1, \dots, x_{i-1})
 \]
 
@@ -50,6 +50,6 @@ p(\mathbf{x}) = \prod_{i=1}^{n} p(x_i \mid x_1, \dots, x_{i-1})
 \]
   *  We can solve the supervised learning problem of \( p(y \mid \mathbf{x}) \) by using unsupervised learning technologies to learn the joint distribution \( p(\mathbf{x}, y) \) and inferring:
 
-   * \[
+\[
 p(y \mid \mathbf{x}) = \frac{p(\mathbf{x}, y)}{\sum_{y'} p(\mathbf{x}, y')}
 \] 
