@@ -78,4 +78,31 @@ $$
 * We need a performance measure, P.
   * m example inputs will not be used for training, but for evaluation. This dataset is called test set.
   * We have a vector of regression targets providing the correct value of y for each of these examples.
-  * Using $X_test$ to denote the test data inputs, and $y_test$ to denote the vector of regression targets. One way of measuring the performance of the model is to compute the mean squared error of the model on the test set. 
+  * Using $X_test$ to denote the test data inputs, and $y_test$ to denote the vector of regression targets. One way of measuring the performance of the model is to compute the mean squared error of the model on the test set.
+# Overfitting and underfitting (30/1/2025)
+* What has been calculated and reduced was based on the training set also called the training error.
+* We want the generalization error (a.k.a the test error) to be low as well => central challenge in ML.
+* We typically estimate the generalization error of a machine learning model using a test set of examples that were collected separately from the training set.
+* If the training and the test set are collected arbitrarily, there is little we can do.
+* Training and testing data generating process:
+  * i.i.d. assumption: the examples in each dataset are independent from each other, and that the train set and test set are identically distributed, drawn from the same probability distribution as each other
+  * This probabilistic framework and the i.i.d. assumptions allow us to mathematically study the relationship between training error and test error.
+  * The expected training error of a randomly selected model is equal to the expected test error of that model.
+  * For fixed $w$, the expected training set error is exactly the same as the expected test set error.
+  * Reality:
+    * parameters not fix ahead of time.
+    * sample the training set, then use it to choose the parameters to reduce training set error, then apply the algorithm to the test set.
+    * test error is greater than or equal to the training error
+* **Underfitting** occurs when the model is not able to obtain a sufficiently low error value on the training set.
+* **Overfitting** occurs when the gap between the training error and test error is too large.
+* Underfitting or Overfitting is determined by the model capacity - ability to fit a wide variety of functions.
+  * Models with low capacity may struggle to fit the training set.
+  * Models with high capacity can overfit by memorizing properties of the training set that do not serve them well on the test set.
+* How to control the capacity of a learning algorithm?
+  * Setting proper hypothesis space: the set of functions that the learning algorithm is allowed to select as being the solution.  => representational capacity.
+  * In practice, the learning algorithm does not actually find the best function, but merely one that significantly reduces the training error. => effective capacity.
+## No Free Lunch (NFL) theorems for machine learning
+* No machine learning algorithm is universally any better than any other.
+* The goal of machine learning research is to design an algorithm that performs well on a specific task.
+* Building a set of preferences into the learning algorithm.
+
