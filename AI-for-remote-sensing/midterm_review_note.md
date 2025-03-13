@@ -68,3 +68,14 @@ $$
 $$
 
 * $\mathbf{w} \in \mathbb{R}^n$: a vector of **parameters/weights**; $w_i$ is the coefficient that we multiply by feature $x_i$ before summing up the contributions from all the features.
+* Parameter weight will control the behavior of the machine learning system and determine how each features affects the prediction.
+* For bigger ML problems, we have till 1 billion params (ChatGPT)
+  * If a feature $x_i$ receives a positive weight $w_i, then increasing the value of that feature increases the value of our prediction $\hat{y}$.
+  * If a feature receives a negative weight, then increasing the value of that feature decreases the value of our prediction.
+  * If a feature’s weight is large in magnitude, then it has a large effect on the prediction.
+  * If a feature’s weight is zero, it has no effect on the prediction.
+* So, now we have a task T : to predict $y$ from $x$ by outputting $\hat{y} = w^T.x$
+* We need a performance measure, P.
+  * m example inputs will not be used for training, but for evaluation. This dataset is called test set.
+  * We have a vector of regression targets providing the correct value of y for each of these examples.
+  * Using $X_test$ to denote the test data inputs, and $y_test$ to denote the vector of regression targets. One way of measuring the performance of the model is to compute the mean squared error of the model on the test set. 
